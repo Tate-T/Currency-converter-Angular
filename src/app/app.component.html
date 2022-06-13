@@ -1,6 +1,20 @@
-<div>{{title}}</div>
+<h1 className="title">{{title}}</h1>
+<div [ngStyle]="{'display': 'flex' , 'align-items': 'center', 'justify-content': 'center'}">
+    <p>exchange rate-sale:</p>
+    <b [ngStyle]="{'margin-left': '30px', 'font-style': 'italic'}">USD: &zwnj;</b>
+    <span> 35,55000 &#8372;</span>
+    <b [ngStyle]="{'margin-left': '30px', 'font-style': 'italic'}">EUR: &zwnj;</b>
+    <span> 37,70000 &#8372;</span>
+</div>
+<div [ngStyle]="{'display': 'flex' , 'align-items': 'center', 'justify-content': 'center'}">
+    <p>exchange rate-buy:</p>
+    <b [ngStyle]="{'margin-left': '30px', 'font-style': 'italic'}">USD: &zwnj;</b>
+    <span>34.75000 &#8372;</span>
+    <b [ngStyle]="{'margin-left': '30px', 'font-style': 'italic'}">EUR: &zwnj;</b>
+    <span>36.70000 &#8372;</span>
+</div>
 <form>
-    <div className={s.currency}>
+    <div [ngStyle]="{'border': '1px solid rgb(85, 85, 22)', 'margin-top': '10px'}">
         <div className={s.inputStyles}>
             <div className={s.currencyBuyText}>
                 <h2>{{titleForm}}</h2>
