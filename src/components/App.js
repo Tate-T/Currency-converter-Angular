@@ -1,6 +1,6 @@
 import './App.css';
-import Header from './components/Header/Header.jsx';
-import Converter from './components/Converter/Converter.jsx';
+import Header from './Header/Header.jsx';
+import Converter from './Converter/Converter.jsx';
 import getCurrencyRateApi from './services/converterApi';
 import { useState, ngOnInit } from 'react';
 

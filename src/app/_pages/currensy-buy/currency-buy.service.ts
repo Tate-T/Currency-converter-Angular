@@ -11,5 +11,7 @@ export class CurrencyBuyService {
   getCurrency() {
     return this.http.get('assets/data.json');
     // return this.http.get(url: 'https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5');
+    // https://api.monobank.ua/bank/currency
+    // https://api.apilayer.com/exchangerates_data/latest?symbols={symbols}&base={base}; ("apikey", "L8sohpxBj4GhDlztkb61gMcECsCIZxLE")
   }
 }
