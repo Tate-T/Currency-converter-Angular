@@ -15,27 +15,65 @@
 </div>
 <form>
     <div [ngStyle]="{'border': '1px solid rgb(85, 85, 22)', 'margin-top': '10px'}">
-        <div className={s.inputStyles}>
-            <div className={s.currencyBuyText}>
+        <div
+            [ngStyle]="{'display': 'flex', 'align-items': 'center', 'justify-content': 'center', 'color': 'rgb(85, 85, 22)'}">
+            <div [ngStyle]="{'margin-right': '50px', 'display': 'flex', 'align-items': 'center'}">
                 <h2>{{titleForm}}</h2>
-                <!-- <select className={s.inputCurrency}>
+                <select [ngStyle]="{'text-align': 'center', 'width': '90px', 'height': '20px', 'margin-left': '30px'}">
                     <option value="USD">USD</option>
                     <option value="EUR">EUR</option>
-                </select> -->
+                </select>
             </div>
-            <!-- <h2>Enter the amount:</h2>
-            <input type="text" placeholder="enter a sum" className={s.inputCurrency} name="currencySum"
-                value={currencySum} onChange={handleInputChange} />
-            <button className={s.currencyBtn} type="submit">
+            <h2>Enter the amount:</h2>
+            <input type="text" placeholder="enter a sum"
+                [ngStyle]="{'text-align': 'center', 'width': '90px', 'height': '20px', 'margin-left': '30px'}"
+                name="currencySum" value="" />
+            <button
+                [ngStyle]="{'margin-left': '30px', 'padding': '5px 15px', 'background-color': 'rgb(146, 167, 104)', 'color': 'rgb(249, 249, 218)', 'border-radius': '10%', 'border': '1px solid rgb(85, 85, 22)'}"
+                type="submit">
                 Count
-            </button> -->
+            </button>
         </div>
-        <!-- <p className={s.currencyResult}>
+        <p
+            [ngStyle]="{'text-align': 'center', 'margin-top': '20px', 'font-size': '30px', 'color': 'rgb(133, 179, 41)', 'text-shadow': '3px 1px rgb(198, 220, 154)'}">
             Amount in USD:
-            <span className={s.currencyResultSum}>
-                {currencyResult.toFixed(2)} &#x24;
+            <span [ngStyle]="{'margin-left': '20px', 'color': 'rgb(103, 145, 20)', 'font-style': 'italic'}">
+                <!-- {currencyResult.toFixed(2)}  -->
+                &#x24;
             </span>
-        </p> -->
+        </p>
+    </div>
+</form>
+
+<form>
+    <div [ngStyle]="{'border': '1px solid rgb(85, 85, 22)', 'margin-top': '10px'}">
+        <div
+            [ngStyle]="{'display': 'flex', 'align-items': 'center', 'justify-content': 'center', 'color': 'rgb(85, 85, 22)'}">
+            <div [ngStyle]="{'margin-right': '50px', 'display': 'flex', 'align-items': 'center'}">
+                <h2>Select type of currency for BUY:</h2>
+                <select [ngStyle]="{'text-align': 'center', 'width': '90px', 'height': '20px', 'margin-left': '30px'}">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+            <h2>Enter the amount:</h2>
+            <input type="text" placeholder="enter a sum"
+                [ngStyle]="{'text-align': 'center', 'width': '90px', 'height': '20px', 'margin-left': '30px'}"
+                name="currencySum" value="" />
+            <button
+                [ngStyle]="{'margin-left': '30px', 'padding': '5px 15px', 'background-color': 'rgb(146, 167, 104)', 'color': 'rgb(249, 249, 218)', 'border-radius': '10%', 'border': '1px solid rgb(85, 85, 22)'}"
+                type="submit">
+                Count
+            </button>
+        </div>
+        <p
+            [ngStyle]="{'text-align': 'center', 'margin-top': '20px', 'font-size': '30px', 'color': 'rgb(133, 179, 41)', 'text-shadow': '3px 1px rgb(198, 220, 154)'}">
+            Amount in UAH:
+            <span [ngStyle]="{'margin-left': '20px', 'color': 'rgb(103, 145, 20)', 'font-style': 'italic'}">
+                <!-- {currencyResult.toFixed(2)}  -->
+                &#8372;
+            </span>
+        </p>
     </div>
 </form>
 
