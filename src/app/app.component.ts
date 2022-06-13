@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CURRENCY CONVERTER';
+  
+  titleForm = 'Select type of currency for SALE:'
 }

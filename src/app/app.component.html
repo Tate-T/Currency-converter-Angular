@@ -1,4 +1,29 @@
 <div>{{title}}</div>
+<form>
+    <div className={s.currency}>
+        <div className={s.inputStyles}>
+            <div className={s.currencyBuyText}>
+                <h2>{{titleForm}}</h2>
+                <!-- <select className={s.inputCurrency}>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select> -->
+            </div>
+            <!-- <h2>Enter the amount:</h2>
+            <input type="text" placeholder="enter a sum" className={s.inputCurrency} name="currencySum"
+                value={currencySum} onChange={handleInputChange} />
+            <button className={s.currencyBtn} type="submit">
+                Count
+            </button> -->
+        </div>
+        <!-- <p className={s.currencyResult}>
+            Amount in USD:
+            <span className={s.currencyResultSum}>
+                {currencyResult.toFixed(2)} &#x24;
+            </span>
+        </p> -->
+    </div>
+</form>
 
-<router-outlet>SALE currency</router-outlet>
-<router-outlet>BUY currency</router-outlet>
+<!-- <router-outlet>SALE currency</router-outlet> -->
+<!-- <router-outlet>BUY currency</router-outlet> -->
