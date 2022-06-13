@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CurrencyBuyService } from './currency-buy.service';
 
 @Component({
   selector: 'app-currensy-buy',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CurrensyBuyComponent implements OnInit {
 
-  constructor() { }
+  constructor(private CurrencyBuyService: CurrencyBuyService) { }
 
   ngOnInit(): void {
   }
