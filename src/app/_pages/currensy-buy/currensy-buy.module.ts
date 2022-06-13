@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CurrensyBuyComponent } from './currensy-buy.component';
-
+import {BuyRoutingModule} from '../currensy-buy/buy-routing.module';
 
 
 @NgModule({
@@ -9,7 +9,8 @@ import { CurrensyBuyComponent } from './currensy-buy.component';
     CurrensyBuyComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    BuyRoutingModule
   ]
 })
 export class CurrensyBuyModule { }
